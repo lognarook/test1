@@ -80,7 +80,7 @@
 }
 .hour{
     left: 98px;
-    z-index: 2;
+    z-index: 99999;
 }
 .hour:after{
     top: 99px;
