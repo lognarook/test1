@@ -19,22 +19,6 @@
     border-radius: 50%;
     box-shadow: 0 0 8px #000000;
 }
-.time2{
-    position: relative;
-    display: block;
-    background: #10d32a79;
-    width: 150px;
-    height: 150px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px #ccc;
-    margin: 20px auto;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    box-shadow: 0 0 8px #000000;
-}
 .center{
     position: absolute;
     left: 98px;
@@ -42,65 +26,111 @@
     content: "";
     padding: 3px;
     border-radius: 50%;
-    background: #000000;
-    z-index: 5;
-}
-.second, #minute, #hour, #l1, #l2, #l3, #l4, #l5, #l6, #l7, #l8, #l9, #l10, #l11, #l12{
-    position: absolute;
-    display: block;
-    content: "";
-    padding: 60px 1px;
-}
-.second:after, #minute:after, #hour:after{
-    position: absolute;
-    left: 0px;
-    content: "";
-}
-.second {
-    left: 100px; 
-    z-index: 4;
-}
-.second:after{
-    top:100px;
-    padding: 40px 3px 20px 0px;
-    border-radius: 5px;
-    background: #000000;
-}
-.minute{
-    left: 100px;
-    z-index: 99999;
-}
-.minute:after{
-    top: 100px;
-    padding: 40px 3px;
-    border-radius: 5px;
-    background: #000000;
-    transform-origin: 50% 0%;
-    transform: rotate(120deg);
+    background: #e20a0a;
 }
 .hour{
-    left: 98px;
-    z-index: 99999;
-}
-.hour:after{
-    top: 99px;
+    position: absolute;
+    left: 99px;
+    top: 97px;
     padding: 20px 3px;
-    border-radius: 5px;
+    border-radius: 30%;
     background: #000000;
-    transform-origin: 50% 0%;
-    transform: rotate(-75deg);
+    transform-origin: 50% 0;
+    transform: rotate(20deg);
+}
+.minute{
+    position: absolute;
+    margin: auto;
+    left: 98px;
+    top: 99px;
+    padding: 30px 2px;
+    border-radius: 30%;
+    background: #000000;
+    transform-origin: 50% 0;
+    transform: rotate(240deg);
+}
+.second{
+    position: absolute;
+    top: 98px;
+    left: 99px;
+    padding: 35px 1px;
+    border-radius: 30%;
+    background: #000000;
+    transform-origin: 50% 0;
+    transform: rotate(160deg);
+}
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9, .l10, .l11, .l12{
+    position: absolute;
+    padding: 10px 1px;
+    background: #0631ee;
 }
 .l1{
-    left: 99px;
-    z-index: 1;
+    top: 14px;
+    left: 150px;
+    transform-origin: 50% 0;
+    transform: rotate(35deg);
 }
-.l1:after{
+.l2{
+    top: 49px;
+    left: 185px;
+    transform-origin: 50% 0;
+    transform: rotate(60deg);
+}
+.l3{
     top: 99px;
-    padding: 10px 2px;
-    border-radius: 5px;
-    background: #000000;
+    left: 199px;
+    transform-origin: 50% 0;
+    transform: rotate(90deg);
 }
-.clock{
-    position: absolute;
-    color: #0000cc;
+.l4{
+    top: 138px;
+    left: 170px;
+    transform-origin: 50% 0;
+    transform: rotate(-60deg);
+}
+.l5{
+    top: 166px;
+    left: 145px;
+    transform-origin: 50% 0;
+    transform: rotate(-35deg);
+}
+.l6{
+    top: 200px;
+    left: 99px;
+    transform-origin: 50% 0;
+    transform: rotate(180deg);
+}
+.l7{
+    top: 166px;
+    left: 54px;
+    transform-origin: 50% 0;
+    transform: rotate(35deg);
+}
+.l8{
+    top: 137px;
+    left: 28px;
+    transform-origin: 50% 0;
+    transform: rotate(60deg);
+}
+.l9{
+    top: 99px;
+    left: -1px;
+    transform-origin: 50% 0;
+    transform: rotate(-90deg);
+}
+.l10{
+    top: 52px;
+    left: 11px;
+    transform-origin: 50% 0;
+    transform: rotate(-60deg);
+}
+.l11{
+    top: 13px;
+    left: 50px;
+    transform-origin: 50% 0;
+    transform: rotate(-30deg);
+}
+.l12{
+    top: 0px;
+    left: 99px;
 }
