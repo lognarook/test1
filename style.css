@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: arial, serif;
+}
+#time{
+    position: relative;
+    display: block;
+    background: #c7dd4779;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ccc;
+    margin: 20px auto;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #000000;
+}
+#time2{
+    position: relative;
+    display: block;
+    background: #10d32a79;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ccc;
+    margin: 20px auto;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #000000;
+}
+    
+#center{
+    position: absolute;
+    left: 98px;
+    top: 97px;
+    content: "";
+    padding: 3px;
+    border-radius: 50%;
+    background: #000000;
+    z-index: 5;
+}
+#second, #minute, #hour, #l1, #l2, #l3, #l4, #l5, #l6, #l7, #l8, #l9, #l10, #l11, #l12{
+    position: absolute;
+    display: block;
+    content: "";
+    padding: 60px 1px;
+}
+#second:after, #minute:after, #hour:after{
+    position: absolute;
+    left: 0px;
+    content: "";
+}
+#second {
+    left: 100px; z-index: 4;
+}
+#second:after{
+    top:100px;
+    padding: 40px 3px 20px 0px;
+    border-radius: 5px;
+    background: #000000;
+}
+#minute{
+    left: 100px;
+    z-index: 3;
+}
+#minute:after{
+    top: 100px;
+    padding: 40px 3px;
+    border-radius: 5px;
+    background: #000000;
+    transform-origin: 50% 0%;
+    transform: rotate(120deg);
+}
+#hour{
+    left: 98px;
+    z-index: 2;
+}
+#hour:after{
+    top: 99px;
+    padding: 20px 3px;
+    border-radius: 5px;
+    background: #000000;
+    transform-origin: 50% 0%;
+    transform: rotate(-75deg);
+}
+#clock{
+    position: absolute;
+    color: #0000cc;
+}
